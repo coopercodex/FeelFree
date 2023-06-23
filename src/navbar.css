@@ -22,7 +22,7 @@
 
 .logo {
   object-fit: contain;
-  margin-left: 1.5rem;
+  margin-left: .5rem;
   height: 155px;
   width: 155px;
   transition: all .3s ease-in-out;
@@ -40,6 +40,7 @@
   gap: 0 1.5rem;
   width: 100%;
   list-style: none;
+  padding: .5rem;
 }
 
 .home-button {
@@ -47,7 +48,7 @@
 }
 
 .home-button {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   height: min-content;
   color: rgb(247, 247, 247);
   text-decoration: none;
@@ -55,8 +56,7 @@
 
 .home-button:hover {
   text-decoration: none;
-  color: #C25D38;
-  ;
+  color: #C1FF72;
 }
 
 .hamburger-container {
@@ -73,7 +73,7 @@
 }
 
 .icon:hover {
-  color: #C25D38;
+  color: #C1FF72;
 }
 
 .logo-media {
@@ -119,7 +119,7 @@
     height: 100vh;
     z-index: -1;
     /* background-color: rgba(160, 158, 158, 0.965); */
-     background-color: rgba(199, 150, 110, 0.962); 
+     background-color: rgba(20, 19, 18, 0.962); 
   }
   .nav-menu > span {
     display: none;
