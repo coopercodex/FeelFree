@@ -4,7 +4,7 @@ import './navbar.css'
 import { ClickAwayListener } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-
+import logo from './assets/Black and Beige Grunge Graffiti Creative Studio Logo.png'
 export const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [show, handleShow] = useState(false);
@@ -41,14 +41,13 @@ export const Navbar = () => {
   return (
     <ClickAwayListener onClickAway={handleClickAway}>
       <div className={`navbar ${show && 'navbar-black'}`}>
-        <Link to='/' onClick={() => setShowNavbar(false)}>Feel Free</Link>
-        {/* <img src={} className='logo' /> */}
+        <Link to='/' onClick={() => setShowNavbar(false)}><img src={logo} className='logo' /> </Link>
         <ul className={showNavbar ? 'nav-menu active' : 'nav-menu'}>
           <li><Link to='/' className="home-button">Home</Link></li>
         </ul>
         <div className='hamburger-container'>
-          {/* <Link to='/'><img src={logo} className='logo-media' /></Link> */}
           <div className='hamburger' onClick={handleNavbar}>
+          {/* <Link to='/'><img src={logo} className='logo-media' /></Link> */}
             {showNavbar ? (<CloseIcon fontSize='large' className='icon' />) : (<MenuIcon fontSize='large' className='icon' />)}
           </div>
         </div>

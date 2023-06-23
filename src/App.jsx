@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import alanBtn from '@alan-ai/alan-sdk-web'
 import { Route, Routes } from 'react-router-dom'
 import { Navbar } from './Navbar'
 
