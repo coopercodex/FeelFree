@@ -4,7 +4,7 @@ import './navbar.css'
 import { ClickAwayListener } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import logo from './assets/Black and Beige Grunge Graffiti Creative Studio Logo.png'
+import logo from './assets/titlelogo.png'
 export const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [show, handleShow] = useState(false);
@@ -44,6 +44,9 @@ export const Navbar = () => {
         <Link to='/' onClick={() => setShowNavbar(false)}><img src={logo} className='logo' /> </Link>
         <ul className={showNavbar ? 'nav-menu active' : 'nav-menu'}>
           <li><Link to='/' className="home-button">Home</Link></li>
+          <li><Link to='/' className="home-button">Movies</Link></li>
+          <li><Link to='/' className="home-button">TV</Link></li>
+          <li><Link to='/' className="home-button">Books</Link></li>
         </ul>
         <div className='hamburger-container'>
           <div className='hamburger' onClick={handleNavbar}>
