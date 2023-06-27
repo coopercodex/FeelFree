@@ -4,7 +4,7 @@ import './navbar.css'
 import { ClickAwayListener } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import logo from './assets/titlelogo.png'
+import logo from '../assets/titlelogo.png'
 export const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [show, handleShow] = useState(false);
