@@ -1,9 +1,9 @@
-import './frontpage.css'
+import './justin.css'
 import requests from '../../requests'
 
 import React, { useEffect, useState } from 'react'
 
-export const FrontPage = () => {
+export const Justin = () => {
   const [movies, setMovies] = useState([])
   const baseUrl = "https://image.tmdb.org/t/p/original"
 
@@ -18,14 +18,16 @@ export const FrontPage = () => {
   useEffect(() => {
     getData()
   }, [])
-
+  console.log(movies)
   return (
     <div className='frontpage-container'>
-      <h1>Just In</h1>
-        <h2>{movies.title || movies.name || movies.original_name}</h2>
+      {/* <h1 className='justin-title'>Just In</h1> */}
+      <h1>{movies.title || movies.name || movies.original_name}</h1>
       <div className='justin-container'>
-        <img className='justin-picture' src={`${baseUrl}${movies?.poster_path || movies?.backdrop_path }`} alt={movies?.name} />
-        <p>{movies.overview}</p>
+        <img className='justin-picture' src={`${baseUrl}${movies.backdrop_path || movies.poster_path}`} alt={movies?.name} />
+        <p className='justin-overview'>{movies.overview}</p>
+      </div>
+      <div className='divider'>
       </div>
     </div>
   )
