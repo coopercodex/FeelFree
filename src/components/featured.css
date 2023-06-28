@@ -1,0 +1,11 @@
+.featured-container {
+    margin-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition-timing-function: ease-in-out;
+    transition: all 0.3s;
+}
+
+.knife-icon {
+  fill: red;
+}

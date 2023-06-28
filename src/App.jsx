@@ -1,7 +1,8 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import { Navbar } from './components/Navbar'
-import { FrontPage } from './components/FrontPage'
+import {Justin} from './components/Justin'
+import { Featured } from './components/Featured'
 
 function App() {
 
@@ -9,7 +10,12 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path='/' element={<FrontPage />} />
+        <Route path='/' element={
+        <>
+        <Justin />
+        <Featured />
+        </>
+        } />
       </Routes>
     </>
   )
