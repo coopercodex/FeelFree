@@ -7,8 +7,8 @@ export const Featured = () => {
   return (
     <div className='featured-container'>
       <h1> <RiKnifeBloodFill className='knife-icon' /> Featured</h1>
-      <img src={sampleImg} style={{height: 300, width: 450}} />
-      <p>Can this be the end for Damien Leone's demonic clown?</p>
+      <img src={sampleImg} style={{height: 300, width: 420}} />
+      <h3>Can this be the end for Damien Leone's demonic clown?</h3>
     </div>
   )
 }
